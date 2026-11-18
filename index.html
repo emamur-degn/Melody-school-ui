@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Melody School - inspiring young minds to learn, grow and achieve." />
+  <title>Melody School | Learn, Grow & Shine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { navy: "#14213d", coral: "#ff765e", cream: "#fffaf4", mint: "#dff5ec" },
+        fontFamily: { display: ["Poppins", "sans-serif"], body: ["Inter", "sans-serif"] },
+        boxShadow: { soft: "0 18px 55px rgba(20,33,61,.10)" }
+      }}
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-slate-700 bg-cream">
+  <div class="announcement text-white text-sm py-2 px-4 text-center">Admissions open for 2026–27 · <a href="#admission" class="underline underline-offset-4 font-semibold">Apply today</a></div>
+  <header class="site-header sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 relative z-50">
+        <span class="brand-mark"><span>✦</span></span>
+        <span class="leading-tight"><strong class="font-display text-xl text-navy">Melody<span class="text-coral">.</span></strong><small class="block text-[10px] tracking-[.22em] uppercase text-slate-400 font-bold">School of excellence</small></span>
+      </a>
+      <nav class="desktop-nav hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#about">About us</a><a class="nav-link" href="#programs">Programs</a><a class="nav-link" href="#campus">Campus life</a><a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-3"><a href="#contact" class="text-sm font-bold text-navy px-4 py-3">Parent portal ↗</a><a href="#admission" class="btn-primary">Apply now <span>↗</span></a></div>
+      <button id="menuToggle" class="lg:hidden relative z-50 w-11 h-11 rounded-xl bg-slate-50 flex flex-col items-center justify-center gap-1.5" aria-label="Open menu" aria-expanded="false"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+    </div>
+  </header>
+
+  <div id="mobileOverlay" class="mobile-overlay"></div>
+  <aside id="mobileSidebar" class="mobile-sidebar" aria-hidden="true">
+    <div class="flex items-center justify-between mb-10"><strong class="font-display text-2xl text-navy">Explore<span class="text-coral">.</span></strong><button id="closeMenu" class="w-10 h-10 rounded-full bg-slate-100 text-xl" aria-label="Close menu">×</button></div>
+    <nav class="flex flex-col gap-1 text-lg font-semibold">
+      <a href="#home">Home <span>↗</span></a><a href="#about">About us <span>↗</span></a><a href="#programs">Programs <span>↗</span></a><a href="#campus">Campus life <span>↗</span></a><a href="#contact">Contact <span>↗</span></a>
+    </nav>
+    <div class="mt-10 p-5 rounded-2xl bg-mint"><p class="font-bold text-navy mb-2">Ready to join Melody?</p><p class="text-sm mb-4">Give your child a place to grow and shine.</p><a href="#admission" class="btn-primary w-full justify-center">Apply now ↗</a></div>
+    <p class="absolute bottom-8 text-xs text-slate-400">© 2026 Melody School</p>
+  </aside>
+
+  <main>
+    <section id="home" class="hero-section overflow-hidden">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center min-h-[650px] py-16 lg:py-20">
+        <div class="hero-copy relative z-10">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A brighter future starts here</div>
+          <h1 class="font-display text-navy text-5xl sm:text-6xl xl:text-[72px] leading-[1.08] font-extrabold mt-6">Big dreams.<br><span class="text-coral italic">Bright</span> futures.</h1>
+          <p class="text-slate-500 text-lg leading-8 max-w-lg mt-6">A happy place to discover talents, build confidence and make learning an adventure every single day.</p>
+          <div class="flex flex-wrap items-center gap-4 mt-9"><a href="#admission" class="btn-primary">Explore admissions <span>↗</span></a><a href="#about" class="watch-link"><span class="play-icon">▶</span> Discover our school</a></div>
+          <div class="flex items-center gap-8 mt-12 pt-7 border-t border-slate-200/80 max-w-lg">
+            <div><strong class="font-display text-3xl text-navy">25<span class="text-coral">+</span></strong><p class="text-xs text-slate-400 mt-1">Years of excellence</p></div><div class="h-10 w-px bg-slate-200"></div>
+            <div><strong class="font-display text-3xl text-navy">1.2k<span class="text-coral">+</span></strong><p class="text-xs text-slate-400 mt-1">Happy students</p></div><div class="h-10 w-px bg-slate-200"></div>
+            <div><strong class="font-display text-3xl text-navy">98<span class="text-coral">%</span></strong><p class="text-xs text-slate-400 mt-1">Parent satisfaction</p></div>
+          </div>
+        </div>
+        <div class="hero-visual relative">
+          <div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85" alt="Students learning together in a bright classroom"></div>
+          <div class="floating-note note-top"><span class="note-icon">✦</span><div><strong>Learn with joy</strong><small>Every day, every child</small></div></div>
+          <div class="floating-note note-bottom"><div class="avatar-stack"><i>😊</i><i>🧒</i><i>👧</i></div><div><strong>Happy community</strong><small>Growing together</small></div></div>
+          <div class="hero-sparkle sparkle-one">✳</div><div class="hero-sparkle sparkle-two">✦</div>
+        </div>
+      </div>
+      <div class="hero-bottom-shape"></div>
+    </section>
+
+    <section class="py-7 bg-white border-y border-slate-100">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 flex flex-wrap justify-center lg:justify-between items-center gap-x-10 gap-y-5 text-slate-400">
+        <span class="text-xs uppercase tracking-[.2em] font-bold">A place to thrive</span><span class="partner-word">✳ Curious minds</span><span class="partner-word">◈ Creative hearts</span><span class="partner-word">✦ Confident voices</span><span class="partner-word">◎ Kind community</span>
+      </div>
+    </section>
+
+    <section id="about" class="py-24 lg:py-28">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="about-visual reveal">
+          <img class="about-main" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=85" alt="Teacher helping a student in class">
+          <div class="about-sticker"><strong>Every child</strong><span>is unique ✦</span></div>
+          <div class="about-small"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=500&q=80" alt="Smiling school child"></div>
+        </div>
+        <div class="reveal">
+          <div class="section-kicker">Who we are</div><h2 class="section-title">More than a school.<br><span>A place to belong.</span></h2>
+          <p class="mt-6 text-slate-500 leading-8">At Melody, we believe education is about more than grades. It's about helping every student find their voice, explore their curiosity and develop the skills to shape tomorrow.</p>
+          <div class="grid sm:grid-cols-2 gap-5 mt-8">
+            <div class="feature-item"><span class="feature-icon bg-orange-100">♡</span><div><strong>Care first</strong><p>Every child is seen and supported.</p></div></div>
+            <div class="feature-item"><span class="feature-icon bg-green-100">✦</span><div><strong>Learn by doing</strong><p>Curiosity leads the classroom.</p></div></div>
+            <div class="feature-item"><span class="feature-icon bg-blue-100">◎</span><div><strong>Grow together</strong><p>We make room for every talent.</p></div></div>
+            <div class="feature-item"><span class="feature-icon bg-purple-100">✧</span><div><strong>Think boldly</strong><p>Confidence for a changing world.</p></div></div>
+          </div>
+          <a href="#campus" class="inline-flex mt-9 font-bold text-navy border-b-2 border-coral pb-2">Get to know us <span class="ml-3">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto reveal"><div class="section-kicker justify-center">Learning pathways</div><h2 class="section-title">A great start for <span>every stage.</span></h2><p class="mt-5 text-slate-500 leading-7">Thoughtfully designed programs that help students discover what they love and become who they can be.</p></div>
+        <div class="grid md:grid-cols-3 gap-6 mt-14">
+          <article class="program-card reveal"><div class="program-image"><img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?auto=format&fit=crop&w=700&q=80" alt="Early years students playing"><span class="program-number">01</span></div><div class="p-7"><span class="age-label">AGES 3–5</span><h3>Early years</h3><p>A joyful first step through play, discovery and friendship.</p><a href="#admission">Explore program <b>↗</b></a></div></article>
+          <article class="program-card reveal delay-1"><div class="program-image"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="Primary school classroom"><span class="program-number">02</span></div><div class="p-7"><span class="age-label">AGES 6–11</span><h3>Primary school</h3><p>Strong foundations, creative thinking and a love of learning.</p><a href="#admission">Explore program <b>↗</b></a></div></article>
+          <article class="program-card reveal delay-2"><div class="program-image"><img src="https://images.unsplash.com/photo-1427504743055-7c7a8a9b8c9c?auto=format&fit=crop&w=700&q=80" alt="Older students studying together"><span class="program-number">03</span></div><div class="p-7"><span class="age-label">AGES 12–16</span><h3>Middle school</h3><p>Building independence, leadership and future-ready skills.</p><a href="#admission">Explore program <b>↗</b></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="campus" class="py-24 bg-mint/50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+        <div class="reveal"><div class="section-kicker">Life at Melody</div><h2 class="section-title">Room to play.<br><span>Space to imagine.</span></h2><p class="mt-6 text-slate-500 leading-8">From science experiments to the football field, our campus is designed for learning that goes beyond the classroom.</p>
+          <div class="campus-list mt-8"><div><span>01</span><p><b>Creative studios</b><small>Art, music and expression</small></p><span>↗</span></div><div><span>02</span><p><b>Sports & movement</b><small>Healthy bodies, happy minds</small></p><span>↗</span></div><div><span>03</span><p><b>Science & discovery</b><small>Questions become possibilities</small></p><span>↗</span></div></div>
+        </div>
+        <div class="campus-photo reveal"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1100&q=85" alt="Bright modern school campus"><div class="photo-caption"><span>✦</span><div><b>Made for moments that matter</b><small>Our campus, your child's next chapter</small></div></div></div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-10 items-end mb-12"><div class="reveal"><div class="section-kicker">Kind words</div><h2 class="section-title">Our community<br><span>says it best.</span></h2></div><p class="text-slate-500 leading-8 max-w-md reveal">A strong school is built on strong relationships. We're proud to partner with families every step of the way.</p></div>
+        <div class="testimonial reveal"><div class="text-coral text-4xl tracking-widest">★★★★★</div><blockquote>“The teachers see the potential in our daughter and encourage her to try new things. She comes home excited to tell us what she's learned.”</blockquote><div class="flex items-center gap-3 mt-7"><div class="testimonial-avatar">SA</div><div><b class="text-navy">Sarah Ahmed</b><small class="block text-slate-400 mt-1">Parent of a Year 4 student</small></div></div><span class="quote-mark">“</span></div>
+      </div>
+    </section>
+
+    <section id="admission" class="py-20">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8"><div class="admission-banner reveal"><div class="relative z-10 max-w-2xl"><div class="text-white/70 uppercase tracking-[.2em] text-xs font-bold">Your next chapter starts here</div><h2 class="font-display text-white text-4xl sm:text-5xl font-extrabold mt-5 leading-tight">Let's make room<br>for <em class="text-[#ffd2a8]">great things.</em></h2><p class="text-white/70 mt-5 leading-7">Discover a school where your child can feel confident, inspired and ready for tomorrow.</p><a href="#contact" class="btn-light mt-8">Start your application <span>↗</span></a></div><div class="banner-decoration">✳</div><div class="banner-circle"></div></div></div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14">
+        <div class="reveal"><div class="section-kicker">Say hello</div><h2 class="section-title">We'd love to<br><span>hear from you.</span></h2><p class="text-slate-500 leading-8 mt-5 max-w-md">Have a question about admissions or school life? Send us a message and our friendly team will be in touch.</p><div class="mt-8 space-y-4 text-sm"><p>✉ hello@melodyschool.edu</p><p>☎ +880 1234-567890</p><p>⌖ Chattogram, Bangladesh</p></div></div>
+        <form id="contactForm" class="contact-form reveal"><div class="grid sm:grid-cols-2 gap-4"><label>Your name<input required name="name" placeholder="Enter your name"></label><label>Email address<input required type="email" name="email" placeholder="you@example.com"></label></div><label>I'm interested in<select name="interest"><option>Admissions</option><option>School programs</option><option>Campus visit</option><option>Other question</option></select></label><label>Your message<textarea required name="message" rows="4" placeholder="How can we help?"></textarea></label><button class="btn-primary w-full justify-center" type="submit">Send message <span>↗</span></button><p id="formMessage" class="text-sm text-green-700 hidden">Thanks! Your message has been prepared. Connect this form to your backend to receive submissions.</p></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-navy text-white pt-14 pb-8"><div class="max-w-7xl mx-auto px-5 lg:px-8"><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12"><div><div class="flex items-center gap-3"><span class="brand-mark brand-mark-footer">✦</span><strong class="font-display text-2xl">Melody<span class="text-coral">.</span></strong></div><p class="text-white/50 text-sm leading-7 mt-5 max-w-xs">Growing curious minds and kind hearts for a brighter tomorrow.</p></div><div><b>Explore</b><div class="footer-links"><a href="#about">About us</a><a href="#programs">Programs</a><a href="#campus">Campus life</a></div></div><div><b>For families</b><div class="footer-links"><a href="#admission">Admissions</a><a href="#contact">Contact</a><a href="#contact">Parent portal</a></div></div><div><b>Visit us</b><p class="text-white/50 text-sm leading-7 mt-4">Chattogram, Bangladesh<br>hello@melodyschool.edu<br>+880 1234-567890</p></div></div><div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/40"><span>© 2026 Melody School. All rights reserved.</span><span>Made with care for curious minds ✦</span></div></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
